@@ -21,4 +21,3 @@ def Camera():
     cv2.destroyAllWindows()
 
 
-Camera()
