@@ -1,5 +1,6 @@
 import customtkinter
 from PIL import Image
+import logic
 
 window = customtkinter.CTk()
 window.geometry("700x650")
@@ -10,6 +11,7 @@ frame.place(relx = 0,rely = 0)
 
 capture = customtkinter.CTkButton(frame,width= 50,height=40,corner_radius= 30,fg_color="#063fff",border_color="black",border_width=2,text="Capture",hover_color="#0971A8")
 capture.place(relx = 0.4,rely = 0.45)
+capture.configure(command= logic.Camera)
 
 imageLabel1 = customtkinter.CTkLabel(window, text="")
 imageLabel1.place(relx=0.30, rely=0.1)
